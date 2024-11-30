@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",()=>{
    {
     try {
         console.log("Fetching quote...");
-        const response= await fetch("http://api.quotable.io/random");
+const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.quotable.io/random");
         if (!response.ok) {
             throw new Error("Failed to fetch data");
         }
